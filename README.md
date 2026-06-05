@@ -239,8 +239,8 @@ la Lumière et les fondations mêmes de l'informatique.
 
 <div align="center">
 
-<!-- STAR DESTROYER OUT OF HYPERSPACE -->
-<img src="https://media.tenor.com/6sFBSjBMkCEAAAAd/star-wars-star-destroyer.gif" width="700" alt="Star Destroyer out of Hyperspace"/>
+<!-- EPISODE 2 CLONE ARMY - FIN -->
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/episode_2_GIF_by_Star_Wars.gif" width="700" alt="Clone Army Episode 2"/>
 
 <br/>
 
