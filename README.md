@@ -39,7 +39,7 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Il y a bien longtemps, dans une galaxie très lointaine...  ║
+║  Il y a bien longtemps, dans une galaxie très lointaine...   ║
 ║  un jeune Padawan commença son voyage dans l'univers du      ║
 ║  code. Des temples Jedi (Python, Java) aux archives de       ║
 ║  l'Ancienne République (Assembleur, C) — il maîtrise         ║
