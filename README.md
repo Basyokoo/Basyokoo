@@ -99,7 +99,7 @@ la Lumière et les fondations mêmes de l'informatique.
 
 <img src="https://github-readme-stats.vercel.app/api?username=Basyokoo&show_icons=true&theme=tokyonight&hide_border=true&title_color=4FC3F7&icon_color=4FC3F7&bg_color=0d1117&text_color=ffffff&locale=fr" alt="GitHub Stats" width="49%"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=4FC3F7&fire=4FC3F7&currStreakLabel=ffffff" alt="GitHub Streak" width="49%"/>
+<img src="https://streak-stats.demolab.com?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=4FC3F7&fire=4FC3F7&currStreakLabel=ffffff&locale=fr" alt="GitHub Streak" width="49%"/>
 
 <br/><br/>
 
@@ -131,13 +131,6 @@ la Lumière et les fondations mêmes de l'informatique.
 
 ---
 
-<!-- BATTLEFRONT GIF SÉPARATEUR -->
-<div align="center">
-<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/Star_Wars_Battlefront_GIF.gif" width="100%" alt="Star Wars Battlefront"/>
-</div>
-
----
-
 <!-- ══════════════════════════════════════════════ -->
 <!--              ENGLISH VERSION                   -->
 <!-- ══════════════════════════════════════════════ -->
@@ -159,13 +152,6 @@ la Lumière et les fondations mêmes de l'informatique.
 - 🌐 I also craft interfaces with **HTML/CSS & JavaScript** when the mission requires it.
 - 🔭 Constantly exploring new systems and pushing my skills further in the galaxy of dev.
 - ⚡ Fun fact: Writing Assembly feels like reading the Force itself — raw, powerful, and unforgiving.
-
----
-
-<!-- BATTLEFRONT GIF SÉPARATEUR -->
-<div align="center">
-<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/Star_Wars_Battlefront_GIF.gif" width="100%" alt="Star Wars Battlefront"/>
-</div>
 
 ---
 
@@ -215,7 +201,7 @@ la Lumière et les fondations mêmes de l'informatique.
 
 <img src="https://github-readme-stats.vercel.app/api?username=Basyokoo&show_icons=true&theme=tokyonight&hide_border=true&title_color=FFE81F&icon_color=FFE81F&bg_color=0d1117&text_color=ffffff" alt="GitHub Stats" width="49%"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=FFE81F&fire=FFE81F&currStreakLabel=ffffff" alt="GitHub Streak" width="49%"/>
+<img src="https://streak-stats.demolab.com?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=FFE81F&fire=FFE81F&currStreakLabel=ffffff" alt="GitHub Streak" width="49%"/>
 
 <br/><br/>
 
@@ -252,6 +238,11 @@ la Lumière et les fondations mêmes de l'informatique.
 ---
 
 <div align="center">
+
+<!-- STAR DESTROYER OUT OF HYPERSPACE -->
+<img src="https://media.tenor.com/6sFBSjBMkCEAAAAd/star-wars-star-destroyer.gif" width="700" alt="Star Destroyer out of Hyperspace"/>
+
+<br/>
 
 *Made with 💙 and a lightsaber by [Basyoko](https://github.com/Basyokoo)*
 
