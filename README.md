@@ -131,11 +131,37 @@ la Lumière et les fondations mêmes de l'informatique.
 
 ---
 
-<!-- ══════════════════════════════════════════════ -->
-<!--              ENGLISH VERSION                   -->
-<!-- ══════════════════════════════════════════════ -->
+<!-- ╔══════════════════════════════════════════════╗ -->
+<!--        TRANSITION FR → EN  /  BATTLEFRONT       -->
+<!-- ╚══════════════════════════════════════════════╝ -->
 
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/Star_Wars_Battlefront_GIF.gif" width="100%" alt="Star Wars Battlefront"/>
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=22&duration=2000&pause=500&color=FFFFFF&center=true&vCenter=true&width=600&lines=%F0%9F%87%AB%F0%9F%87%B7+Version+Fran%C3%A7aise+termin%C3%A9e;%F0%9F%87%AC%F0%9F%87%A7+Switching+to+English+Version...;May+the+Code+be+with+you." alt="Transition FR EN" />
+
+<br/><br/>
+
+<!-- BANDEAU LANGUE -->
+<table>
+<tr>
+<td align="center" width="50%">
+
+![FR](https://img.shields.io/badge/%F0%9F%87%AB%F0%9F%87%B7-VERSION%20FRAN%C3%87AISE%20%E2%9C%93-4FC3F7?style=for-the-badge)
+
+</td>
+<td align="center" width="50%">
+
+![EN](https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7-ENGLISH%20VERSION%20%E2%86%93-FFE81F?style=for-the-badge)
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&duration=3000&pause=1000&color=FFE81F&center=true&vCenter=true&width=700&lines=May+the+Code+be+with+you...;A+Jedi+Developer+has+arrived.;Basyoko+%7C+Padawan+of+the+Back-End" alt="Typing SVG EN" />
 
