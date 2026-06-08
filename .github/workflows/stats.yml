@@ -1,0 +1,175 @@
+name: Generate Stats Cards
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat > /tmp/gen.py << 'PYEOF'
+import requests, os, json
+
+token    = os.environ["GITHUB_TOKEN"]
+username = "Basyokoo"
+headers  = {"Authorization": f"Bearer {token}"}
+
+query = """
+query($login: String!) {
+  user(login: $login) {
+    repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+      nodes {
+        stargazerCount
+        languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+          edges { size node { name color } }
+        }
+      }
+    }
+    contributionsCollection {
+      totalCommitContributions
+    }
+    pullRequests { totalCount }
+    issues       { totalCount }
+  }
+}
+"""
+
+r    = requests.post("https://api.github.com/graphql",
+       json={"query": query, "variables": {"login": username}},
+       headers=headers)
+resp = r.json()
+print("API response:", json.dumps(resp, indent=2)[:500])
+
+user    = resp["data"]["user"]
+commits = user["contributionsCollection"]["totalCommitContributions"]
+prs     = user["pullRequests"]["totalCount"]
+issues  = user["issues"]["totalCount"]
+stars   = sum(n["stargazerCount"] for n in user["repositories"]["nodes"])
+
+# --- Languages ---
+lang_sizes = {}
+for repo in user["repositories"]["nodes"]:
+    for edge in repo["languages"]["edges"]:
+        n     = edge["node"]["name"]
+        color = edge["node"]["color"] or "#858585"
+        if n not in lang_sizes:
+            lang_sizes[n] = {"size": 0, "color": color}
+        lang_sizes[n]["size"] += edge["size"]
+
+total = sum(v["size"] for v in lang_sizes.values()) or 1
+top   = sorted(lang_sizes.items(), key=lambda x: -x[1]["size"])[:8]
+
+os.makedirs("assets", exist_ok=True)
+
+# ── STATS CARD ──────────────────────────────────────────────────────
+W, H = 495, 200
+stats_svg = f'''<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text {{ font-family: "Segoe UI", Ubuntu, sans-serif; }}
+      .title {{ font-size: 17px; font-weight: 600; fill: #4FC3F7; }}
+      .label {{ font-size: 13px; fill: #8b949e; }}
+      .value {{ font-size: 14px; font-weight: 600; fill: #e6edf3; }}
+      .sub   {{ font-size: 12px; fill: #6e7681; }}
+    </style>
+  </defs>
+  <rect width="{W}" height="{H}" rx="10" ry="10" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <text x="25" y="38" class="title">Basyoko - GitHub Stats</text>
+  <line x1="25" y1="50" x2="{W-25}" y2="50" stroke="#21262d" stroke-width="1"/>
+  <!-- Commits -->
+  <text x="25"  y="85"  class="label">Total Commits (this year)</text>
+  <text x="{W-40}" y="85"  class="value" text-anchor="end">{commits}</text>
+  <!-- PRs -->
+  <text x="25"  y="115" class="label">Pull Requests</text>
+  <text x="{W-40}" y="115" class="value" text-anchor="end">{prs}</text>
+  <!-- Issues -->
+  <text x="25"  y="145" class="label">Issues Opened</text>
+  <text x="{W-40}" y="145" class="value" text-anchor="end">{issues}</text>
+  <!-- Stars -->
+  <text x="25"  y="175" class="label">Total Stars Earned</text>
+  <text x="{W-40}" y="175" class="value" text-anchor="end">{stars}</text>
+</svg>'''
+
+with open("assets/stats.svg", "w", encoding="utf-8") as f:
+    f.write(stats_svg)
+print("stats.svg written")
+
+# ── LANGUAGES CARD ──────────────────────────────────────────────────
+if not top:
+    top = [("No data yet", {"size": 1, "color": "#858585"})]
+
+rows       = (len(top) + 1) // 2
+card_h     = 75 + 14 + 16 + rows * 26 + 20
+BAR_X, BAR_Y, BAR_W, BAR_H = 25, 75, 445, 10
+
+# bar segments
+segs = ""
+cx   = BAR_X
+for name, info in top:
+    w = max(1, int(info["size"] / total * BAR_W))
+    segs += f'<rect x="{cx}" y="{BAR_Y}" width="{w}" height="{BAR_H}" rx="2" fill="{info["color"]}"/>\n'
+    cx += w
+
+# legend
+legend = ""
+for i, (name, info) in enumerate(top):
+    col = i % 2
+    row = i // 2
+    lx  = 25 + col * 230
+    ly  = BAR_Y + BAR_H + 22 + row * 26
+    pct = round(info["size"] / total * 100, 1)
+    safe_name = name[:18] + ("..." if len(name) > 18 else "")
+    legend += f'''  <circle cx="{lx+6}" cy="{ly-4}" r="5" fill="{info['color']}"/>
+  <text x="{lx+16}" y="{ly}" class="label">{safe_name}</text>
+  <text x="{lx+210}" y="{ly}" class="sub" text-anchor="end">{pct}%</text>\n'''
+
+langs_svg = f'''<svg width="495" height="{card_h}" viewBox="0 0 495 {card_h}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text {{ font-family: "Segoe UI", Ubuntu, sans-serif; }}
+      .title {{ font-size: 17px; font-weight: 600; fill: #4FC3F7; }}
+      .label {{ font-size: 13px; fill: #8b949e; }}
+      .sub   {{ font-size: 12px; fill: #6e7681; }}
+    </style>
+  </defs>
+  <rect width="495" height="{card_h}" rx="10" ry="10" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <text x="25" y="38" class="title">Most Used Languages</text>
+  <line x1="25" y1="50" x2="470" y2="50" stroke="#21262d" stroke-width="1"/>
+  <text x="25" y="68" class="sub">Based on public repository code</text>
+  {segs}
+  {legend}
+</svg>'''
+
+with open("assets/langs.svg", "w", encoding="utf-8") as f:
+    f.write(langs_svg)
+print("langs.svg written")
+print("Done!")
+PYEOF
+          python3 /tmp/gen.py
+
+      - name: Commit generated files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --cached --quiet || git commit -m "chore: update stats cards [skip ci]"
+          git push
