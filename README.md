@@ -50,11 +50,11 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║   Il y a bien longtemps, dans une galaxie très lointaine...     ║
-║   un jeune Padawan entama son voyage dans l'univers du code.    ║
-║   Des hauts temples Jedi (Python, Java) aux archives de         ║
-║   l'Ancienne République (Assembleur, C) — naviguant entre       ║
-║   abstraction et métal brut, il forge sa voie dans le Dev.      ║
+║   Il y a bien longtemps, dans une galaxie très lointaine...      ║
+║   un jeune Padawan entama son voyage dans l'univers du code.     ║
+║   Des hauts temples Jedi (Python, Java) aux archives de          ║
+║   l'Ancienne République (Assembleur, C) — naviguant entre        ║
+║   abstraction et métal brut, il forge sa voie dans le Dev.       ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
