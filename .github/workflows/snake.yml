@@ -1,25 +1,47 @@
-name: Snake
+name: Generate Stats Cards
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
-jobs:
-  snake:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: Basyokoo
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-      - name: Push to output branch
-        uses: peaceiris/actions-gh-pages@v3
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        uses: soulteary/github-readme-stats-action@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
-          publish_dir: ./dist
-          force_orphan: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          card: stats
+          path: assets/stats.svg
+          options: >
+            username=Basyokoo&theme=tokyonight&hide_border=true
+            &title_color=4FC3F7&icon_color=4FC3F7
+            &bg_color=0d1117&text_color=ffffff&rank_icon=github
+
+      - name: Generate Top Languages
+        uses: soulteary/github-readme-stats-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          card: top-langs
+          path: assets/langs.svg
+          options: >
+            username=Basyokoo&theme=tokyonight&hide_border=true
+            &title_color=4FC3F7&text_color=ffffff
+            &layout=compact&langs_count=8
+
+      - name: Commit generated files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --cached --quiet || git commit -m "chore: update stats cards"
+          git push
