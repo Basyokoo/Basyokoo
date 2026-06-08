@@ -50,11 +50,11 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║   Il y a bien longtemps, dans une galaxie très lointaine...      ║
-║   un jeune Padawan entama son voyage dans l'univers du code.     ║
-║   Des hauts temples Jedi (Python, Java) aux archives de          ║
-║   l'Ancienne République (Assembleur, C) — naviguant entre        ║
-║   abstraction et métal brut, il forge sa voie dans le Dev.       ║
+║   Il y a bien longtemps, dans une galaxie très lointaine...     ║
+║   un jeune Padawan entama son voyage dans l'univers du code.    ║
+║   Des hauts temples Jedi (Python, Java) aux archives de         ║
+║   l'Ancienne République (Assembleur, C) — naviguant entre       ║
+║   abstraction et métal brut, il forge sa voie dans le Dev.      ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -175,13 +175,13 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Basyokoo&show_icons=true&theme=tokyonight&hide_border=true&title_color=4FC3F7&icon_color=4FC3F7&bg_color=0d1117&text_color=ffffff&locale=fr&rank_icon=github&cache_seconds=1800" width="48%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/stats.svg" width="48%"/>
 &nbsp;
 <img src="https://streak-stats.demolab.com/?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=4FC3F7&fire=4FC3F7&currStreakLabel=4FC3F7" width="48%"/>
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Basyokoo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=4FC3F7&text_color=ffffff&cache_seconds=1800&langs_count=8" width="45%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="45%"/>
 &nbsp;
 <img src="https://github-profile-trophy.vercel.app/?username=Basyokoo&theme=darkhub&no-frame=true&no-bg=true&column=4&margin-w=6" width="50%"/>
 
@@ -370,13 +370,13 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Basyokoo&show_icons=true&theme=tokyonight&hide_border=true&title_color=FFE81F&icon_color=FFE81F&bg_color=0d1117&text_color=ffffff&rank_icon=github&cache_seconds=1800" width="48%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/stats.svg" width="48%"/>
 &nbsp;
 <img src="https://streak-stats.demolab.com/?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=FFE81F&fire=FFE81F&currStreakLabel=FFE81F" width="48%"/>
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Basyokoo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=FFE81F&text_color=ffffff&cache_seconds=1800&langs_count=8" width="45%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="45%"/>
 &nbsp;
 <img src="https://github-profile-trophy.vercel.app/?username=Basyokoo&theme=darkhub&no-frame=true&no-bg=true&column=4&margin-w=6" width="50%"/>
 
