@@ -50,11 +50,11 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║   Il y a bien longtemps, dans une galaxie très lointaine...      ║
-║   un jeune Padawan entama son voyage dans l'univers du code.     ║
-║   Des hauts temples Jedi (Python, Java) aux archives de          ║
-║   l'Ancienne République (Assembleur, C) — naviguant entre        ║
-║   abstraction et métal brut, il forge sa voie dans le Dev.       ║
+║   Il y a bien longtemps, dans une galaxie très lointaine...     ║
+║   un jeune Padawan entama son voyage dans l'univers du code.    ║
+║   Des hauts temples Jedi (Python, Java) aux archives de         ║
+║   l'Ancienne République (Assembleur, C) — naviguant entre       ║
+║   abstraction et métal brut, il forge sa voie dans le Dev.      ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -181,9 +181,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="45%"/>
-&nbsp;
-<img src="https://github-profile-trophy.vercel.app/?username=Basyokoo&theme=darkhub&no-frame=true&no-bg=true&column=4&margin-w=6" width="50%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="96%"/>
 
 <br/><br/>
 
@@ -376,9 +374,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="45%"/>
-&nbsp;
-<img src="https://github-profile-trophy.vercel.app/?username=Basyokoo&theme=darkhub&no-frame=true&no-bg=true&column=4&margin-w=6" width="50%"/>
+<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/langs.svg" width="96%"/>
 
 <br/><br/>
 
