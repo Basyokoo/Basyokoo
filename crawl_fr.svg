@@ -1,0 +1,10 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="150" rx="10" fill="#0d1117" stroke="#4FC3F7" stroke-width="1.5"/>
+  <text font-family="monospace" font-size="13" fill="#4FC3F7" text-anchor="middle">
+    <tspan x="300" dy="25">Il y a bien longtemps, dans une galaxie très lointaine...</tspan>
+    <tspan x="300" dy="22">un jeune Padawan entama son voyage dans l'univers du code.</tspan>
+    <tspan x="300" dy="22">Des hauts temples Jedi (Python, Java) aux archives de</tspan>
+    <tspan x="300" dy="22">l'Ancienne République (Assembleur, C) — naviguant entre</tspan>
+    <tspan x="300" dy="22">abstraction et métal brut, il forge sa voie dans le Dev.</tspan>
+  </text>
+</svg>
