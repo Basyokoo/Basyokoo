@@ -91,13 +91,13 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,cs,js,html,css,c&theme=dark&perline=7" alt="Skill Icons"/>
+<img src="https://skillicons.dev/icons?i=python,java,cs,js,php,html,css,laravel,mysql,godot,c&theme=dark&perline=11" alt="Skill Icons"/>
 
 <br/><br/>
 
 <table>
 <tr>
-<td align="center" width="33%">
+<td align="center" width="25%">
 
 **⚔️ Haut Niveau**
 
@@ -105,17 +105,28 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 
-**🌐 Front-End**
+**🌐 Web & Données**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
+
+**🎮 Moteur de Jeu**
+
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)
+
+</td>
+<td align="center" width="25%">
 
 **🔩 Bas Niveau**
 
@@ -140,6 +151,33 @@
 
 <table>
 <tr>
+<td align="center" colspan="2">
+
+### 🎮 [TheFiloutageGame](https://github.com/Basyokoo/TheFiloutageGame)
+*Jeu sérieux de simulation pour comprendre la massification*
+
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
+![Status](https://img.shields.io/badge/Status-En_cours_⚙️-FFE81F?style=flat-square)
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+### 🤖 [Bot_dc](https://github.com/Basyokoo/Bot_dc)
+*Bot Discord relié à un site web et une base de données (même dépôt) — musique, jeux, économie, modération…*
+
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-En_cours_⚙️-FFE81F?style=flat-square)
+
+</td>
 <td align="center" width="50%">
 
 ### 🃏 [Inscryption](https://github.com/Basyokoo/Inscryption)
@@ -171,7 +209,7 @@
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Basyokoo&bg_color=0d1117&color=4FC3F7&line=4FC3F7&point=ffffff&area=true&area_color=0a2a40&hide_border=true&custom_title=Activit%C3%A9+de+Basyoko" width="96%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Basyokoo&theme=tokyonight" width="96%" alt="Activité de Basyoko"/>
 
 </div>
 
