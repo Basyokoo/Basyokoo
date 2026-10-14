@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" width="480" height="420">
+<defs>
+<radialGradient id="bg" cx="30%" cy="35%" r="80%"><stop offset="0" stop-color="#1a1f3d"/><stop offset="1" stop-color="#0d1117"/></radialGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+.link{fill:none;stroke:#5865F2;stroke-opacity:.5;stroke-width:2;stroke-dasharray:6 6;animation:dash 1.2s linear infinite}@keyframes dash{to{stroke-dashoffset:-24}}
+.eq{fill:#4FC3F7;transform-box:fill-box;transform-origin:bottom;animation:eq 1s ease-in-out infinite}@keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+.dot{fill:#5865F2;animation:ty 1.2s infinite}@keyframes ty{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.node{fill:#161b22;stroke:#5865F2;stroke-width:2}
+.lbl{fill:#e6edf3}.sub{fill:#8b949e}.t{fill:#5865F2}
+.cursor{animation:bl 1s steps(2,start) infinite}@keyframes bl{to{visibility:hidden}}
+.pulse{fill:none;stroke:#5865F2;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-out infinite}@keyframes pl{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.9);opacity:0}}
+</style>
+<rect x="1" y="1" width="478" height="418" rx="18" fill="url(#bg)" stroke="#5865F2" stroke-opacity=".55" stroke-width="2"/>
+<rect x="26" y="26" width="200" height="40" rx="10" fill="#161b22" stroke="#5865F2" stroke-opacity=".6"/>
+<text x="42" y="52" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="14" fill="#4FC3F7">/play lofi<tspan class="cursor"> ▍</tspan></text>
+<text x="454" y="44" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="12" fill="#8b949e" text-anchor="end">ONLINE</text>
+<circle cx="380" cy="40" r="5" fill="#3ba55d" filter="url(#glow)"><animate attributeName="opacity" values="1;.4;1" dur="2s" repeatCount="indefinite"/></circle>
+<path class="link" d="M110,185 Q240.0,127.5 370,120"/>
+<path class="link" d="M110,185 Q240.0,250.0 370,265"/>
+<path class="link" d="M370,120 L370,265"/>
+<circle r="5" fill="#4FC3F7" filter="url(#glow)"><animateMotion dur="2.6s" begin="0s" repeatCount="indefinite" path="M110,185 Q240.0,127.5 370,120"/></circle>
+<circle r="5" fill="#FFE81F" filter="url(#glow)"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite" path="M110,185 Q240.0,127.5 370,120"/></circle>
+<circle r="5" fill="#4FC3F7" filter="url(#glow)"><animateMotion dur="3.0s" begin="0.4s" repeatCount="indefinite" path="M110,185 Q240.0,250.0 370,265"/></circle>
+<circle r="5" fill="#FFE81F" filter="url(#glow)"><animateMotion dur="3.0s" begin="1.9s" repeatCount="indefinite" path="M110,185 Q240.0,250.0 370,265"/></circle>
+<circle r="5" fill="#5865F2" filter="url(#glow)"><animateMotion dur="2.0s" begin="0.8s" repeatCount="indefinite" path="M370,120 L370,265"/></circle>
+<circle class="pulse" cx="110" cy="185" r="38"/>
+<rect class="node" x="70" y="151" width="80" height="68" rx="16"/>
+<line x1="110" y1="151" x2="110" y2="135" stroke="#5865F2" stroke-width="3"/><circle cx="110" cy="131" r="5" fill="#4FC3F7" filter="url(#glow)"/>
+<circle cx="96" cy="179" r="7" fill="#4FC3F7" filter="url(#glow)"/><circle cx="124" cy="179" r="7" fill="#4FC3F7" filter="url(#glow)"/>
+<rect x="96" y="197" width="28" height="5" rx="2.5" fill="#5865F2"/>
+<text x="110" y="247" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="12" text-anchor="middle" class="lbl" letter-spacing="2">BOT</text>
+<rect class="node" x="322" y="86" width="96" height="68" rx="10"/>
+<line x1="322" y1="104" x2="418" y2="104" stroke="#5865F2" stroke-width="2"/>
+<circle cx="332" cy="95" r="3" fill="#ed4245"/><circle cx="342" cy="95" r="3" fill="#faa61a"/><circle cx="352" cy="95" r="3" fill="#3ba55d"/>
+<rect x="332" y="114" width="50" height="6" rx="3" fill="#4FC3F7" opacity=".8"/><rect x="332" y="128" width="72" height="6" rx="3" fill="#8b949e" opacity=".6"/><rect x="332" y="140" width="36" height="6" rx="3" fill="#8b949e" opacity=".6"/>
+<text x="370" y="76" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="12" text-anchor="middle" class="lbl" letter-spacing="2">WEB</text>
+<path class="node" d="M336,239 v44 a34,10 0 0 0 68,0 v-44 a34,10 0 0 0 -68,0z"/>
+<ellipse cx="370" cy="239" rx="34" ry="10" fill="#1d2340" stroke="#5865F2" stroke-width="2"/>
+<path d="M336,261 a34,10 0 0 0 68,0" fill="none" stroke="#5865F2" stroke-opacity=".6"/>
+<path d="M336,277 a34,10 0 0 0 68,0" fill="none" stroke="#5865F2" stroke-opacity=".6"/>
+<text x="370" y="315" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="12" text-anchor="middle" class="lbl" letter-spacing="2">SQL</text>
+<rect class="eq" x="58" y="260" width="8" height="40" rx="2" style="animation-delay:0.00s;animation-duration:0.80s"/>
+<rect class="eq" x="71" y="260" width="8" height="40" rx="2" style="animation-delay:0.13s;animation-duration:0.97s"/>
+<rect class="eq" x="84" y="260" width="8" height="40" rx="2" style="animation-delay:0.26s;animation-duration:1.14s"/>
+<rect class="eq" x="97" y="260" width="8" height="40" rx="2" style="animation-delay:0.39s;animation-duration:1.31s"/>
+<rect class="eq" x="110" y="260" width="8" height="40" rx="2" style="animation-delay:0.52s;animation-duration:0.80s"/>
+<rect class="eq" x="123" y="260" width="8" height="40" rx="2" style="animation-delay:0.65s;animation-duration:0.97s"/>
+<rect class="eq" x="136" y="260" width="8" height="40" rx="2" style="animation-delay:0.78s;animation-duration:1.14s"/>
+<rect class="eq" x="149" y="260" width="8" height="40" rx="2" style="animation-delay:0.91s;animation-duration:1.31s"/>
+<rect class="eq" x="162" y="260" width="8" height="40" rx="2" style="animation-delay:0.04s;animation-duration:0.80s"/>
+<rect class="eq" x="175" y="260" width="8" height="40" rx="2" style="animation-delay:0.17s;animation-duration:0.97s"/>
+<rect class="eq" x="188" y="260" width="8" height="40" rx="2" style="animation-delay:0.30s;animation-duration:1.14s"/>
+<rect class="eq" x="201" y="260" width="8" height="40" rx="2" style="animation-delay:0.43s;animation-duration:1.31s"/>
+<rect class="eq" x="214" y="260" width="8" height="40" rx="2" style="animation-delay:0.56s;animation-duration:0.80s"/>
+<rect class="eq" x="227" y="260" width="8" height="40" rx="2" style="animation-delay:0.69s;animation-duration:0.97s"/>
+<text x="240.0" y="358" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle" class="t" filter="url(#glow)">BOT_DC</text>
+<text x="240.0" y="382" font-family="'Orbitron','Segoe UI',Arial,sans-serif" font-size="11" text-anchor="middle" class="sub" letter-spacing="3">DISCORD  •  LARAVEL  •  PYTHON  •  SQL</text>
+</svg>
