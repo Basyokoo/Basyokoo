@@ -155,7 +155,7 @@
 <tr>
 <td width="33%" align="center" valign="middle">
 
-<a href="https://github.com/Basyokoo/TheFiloutageGame"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/filoutage.svg" alt="TheFiloutageGame" width="100%"/></a>
+<a href="https://github.com/Basyokoo/TheFiloutageGame"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/filoutage.svg" alt="TheFiloutageGame" width="100%"/></a>
 
 </td>
 <td width="67%" valign="middle">
@@ -168,7 +168,15 @@
 
 </td>
 </tr>
+</table>
+
+<table>
 <tr>
+<td width="33%" align="center" valign="middle">
+
+<a href="https://github.com/Basyokoo/Bot_dc"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/botdc.svg" alt="Bot_dc" width="100%"/></a>
+
+</td>
 <td width="67%" valign="middle">
 
 ### 🤖 [Bot_dc](https://github.com/Basyokoo/Bot_dc)
@@ -185,11 +193,6 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-En_cours_⚙️-FFE81F?style=flat-square)
-
-</td>
-<td width="33%" align="center" valign="middle">
-
-<a href="https://github.com/Basyokoo/Bot_dc"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/botdc.svg" alt="Bot_dc" width="100%"/></a>
 
 </td>
 </tr>
