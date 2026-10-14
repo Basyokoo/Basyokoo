@@ -147,14 +147,21 @@
 
 > *« Fais-le. Ou ne le fais pas. Il n'y a pas d'essai. »* — **Yoda**
 
+</div>
+
 <br/>
 
 <table>
 <tr>
-<td align="center" colspan="2">
+<td width="33%" align="center" valign="middle">
+
+<a href="https://github.com/Basyokoo/TheFiloutageGame"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/filoutage.svg" alt="TheFiloutageGame" width="100%"/></a>
+
+</td>
+<td width="67%" valign="middle">
 
 ### 🎮 [TheFiloutageGame](https://github.com/Basyokoo/TheFiloutageGame)
-*Jeu sérieux de simulation pour comprendre la massification*
+*Jeu sérieux de simulation pour comprendre la massification.*
 
 ![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-En_cours_⚙️-FFE81F?style=flat-square)
@@ -162,10 +169,12 @@
 </td>
 </tr>
 <tr>
-<td align="center" width="50%">
+<td width="67%" valign="middle">
 
 ### 🤖 [Bot_dc](https://github.com/Basyokoo/Bot_dc)
-*Bot Discord relié à un site web et une base de données (même dépôt) — musique, jeux, économie, modération…*
+*Bot Discord relié à un site web et à une base de données, dans un seul et même dépôt.*
+
+🎵 Musique &nbsp;•&nbsp; 🎲 Jeux &nbsp;•&nbsp; 💰 Économie &nbsp;•&nbsp; 🛡️ Modération &nbsp;•&nbsp; …
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
@@ -178,18 +187,23 @@
 ![Status](https://img.shields.io/badge/Status-En_cours_⚙️-FFE81F?style=flat-square)
 
 </td>
-<td align="center" width="50%">
+<td width="33%" align="center" valign="middle">
 
-### 🃏 [Inscryption](https://github.com/Basyokoo/Inscryption)
-*Jeu de cartes en Java inspiré d'Inscryption — pouvoirs spéciaux, 3 parties enchaînées*
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit_4-25A162?style=flat-square&logo=junit5&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Terminé_✓-4FC3F7?style=flat-square)
+<a href="https://github.com/Basyokoo/Bot_dc"><img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/botdc.svg" alt="Bot_dc" width="100%"/></a>
 
 </td>
 </tr>
 </table>
+
+<br/>
+
+<div align="center">
+
+**Autres missions** &nbsp;·&nbsp; 🃏 [Inscryption](https://github.com/Basyokoo/Inscryption) — *Jeu de cartes en Java inspiré d'Inscryption — pouvoirs spéciaux, 3 parties enchaînées*
+&nbsp;
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit_4-25A162?style=flat-square&logo=junit5&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Terminé_✓-4FC3F7?style=flat-square)
 
 </div>
 
