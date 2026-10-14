@@ -199,7 +199,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Basyokoo/Basyokoo/main/assets/stats.svg" width="48%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Basyokoo&theme=tokyonight" width="48%" alt="Stats GitHub"/>
 &nbsp;
 <img src="https://streak-stats.demolab.com/?user=Basyokoo&theme=tokyonight&hide_border=true&background=0d1117&ring=4FC3F7&fire=4FC3F7&currStreakLabel=4FC3F7" width="48%"/>
 
